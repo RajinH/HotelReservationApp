@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelapplication.BookingsPageController">
+   <children>
+      <Pane prefHeight="94.0" prefWidth="881.0" style="-fx-background-color: #3d3c38;">
+         <children>
+            <Label layoutX="34.0" layoutY="27.0" text="Hotel" textFill="#f2d500">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_view" layoutX="606.0" layoutY="34.0" text="View Bookings" textFill="#f2d500">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_logOut" layoutX="775.0" layoutY="34.0" text="Log Out" textFill="#f2d500">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="730.0" layoutY="94.0" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #e6e6e6;" text="username" />
+      <Label layoutX="44.0" layoutY="184.0" text="Suite Type" />
+      <ChoiceBox fx:id="chb_suiteType" layoutX="44.0" layoutY="204.0" prefWidth="150.0" />
+      <Label layoutX="44.0" layoutY="247.0" text="Check-In Date" />
+      <DatePicker fx:id="dp_checkIn" layoutX="44.0" layoutY="267.0" />
+      <Label layoutX="44.0" layoutY="310.0" text="Check-Out Date" />
+      <DatePicker fx:id="dp_checkOut" layoutX="44.0" layoutY="330.0" />
+      <Label layoutX="44.0" layoutY="373.0" text="Extras">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="157.0" text="Basic Information">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cb_beds" layoutX="46.0" layoutY="402.0" mnemonicParsing="false" text="Extra Beds" />
+      <CheckBox fx:id="cb_breakfast" layoutX="46.0" layoutY="429.0" mnemonicParsing="false" text="Hot Breakfast" />
+      <CheckBox fx:id="cb_wifi" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" text="Wi-Fi" />
+      <CheckBox fx:id="cb_calls" layoutX="46.0" layoutY="485.0" mnemonicParsing="false" text="Outgoing Phone Calls" />
+      <Label layoutX="270.0" layoutY="156.0" text="Additional Information">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cb_guests" layoutX="272.0" layoutY="184.0" mnemonicParsing="false" text="Do you have any Guests?" />
+      <CheckBox fx:id="cb_pets" layoutX="272.0" layoutY="213.0" mnemonicParsing="false" text="Do you have any Pets?" />
+      <Label layoutX="27.0" layoutY="114.0" text="Bookings Page">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="490.0" layoutY="135.0" orientation="VERTICAL" prefHeight="385.0" prefWidth="22.0" />
+      <Label fx:id="lbl_suiteHead" layoutX="522.0" layoutY="152.0" text="Suite Name | Price Per Night">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="194.0" text="Suite Details">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ta_details" editable="false" layoutX="522.0" layoutY="228.0" prefHeight="134.0" prefWidth="256.0" text="1x Free TV&#10;1x Bed&#10;1x Window&#10;" />
+      <Label fx:id="lbl_totalCost" layoutX="522.0" layoutY="392.0" text="Total Cost: $500">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cb_terms" layoutX="522.0" layoutY="429.0" mnemonicParsing="false" text="I agree with the terms" />
+      <Button fx:id="btn_book" layoutX="522.0" layoutY="462.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="117.0" text="Book" />
+   </children>
+</AnchorPane>
